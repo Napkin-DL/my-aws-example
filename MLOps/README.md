@@ -35,8 +35,7 @@ In this demo, I focus on automated ways replaced of repetitive processes at the 
   #### Deep learning framework : Pytorch
   #### Main language : python 3.6
   #### AWS Services
-
-      You should have some basic experience with:
+  You should have some basic experience with:
       - [Amazon SageMaker](https://aws.amazon.com/sagemaker/)
         - Amazon SageMaker Experiments
         - Amazon SageMaker Debugger
@@ -50,13 +49,19 @@ In this demo, I focus on automated ways replaced of repetitive processes at the 
       - [Amazon API Gateway](https://aws.amazon.com/api-gateway/)
       - [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/)
 
-## Scenario
+### Scenario
 
-There are two phases in the demo. The MLOps process at the first phase is performed automatically after pushing source codes for models to the AWS CodeCommit (similar to the Github). The process includes from deploying to hosting a model from which users can receive a result of classification via REST API. The detailed process is as a below.
+There are two phases in the demo.
+
+#### Phase I
+
+The MLOps process at the first phase is performed automatically after pushing source codes for models to the AWS CodeCommit (similar to the Github). The process includes from deploying to hosting a model from which users can receive a result of classification via REST API. The detailed process is as a below.
 
 <div align="center">
   <img src="./docs/images/phase1process.png">
 </div>
+
+#### Phase II
 
 The second phase is started the MLOps process repetitively whenever the new dataset is prepared. After hosting models, various deviations are detected such as data drift that can degrade model performance over time due to changing of external environments, such as temperature, humid, deformation of data generated devices. Therefore, a Quality team needs to do labeling tasks for new data continuously as a preparation to take remedial actions for models.
 When amounts of new labeled dataset are collected in S3, the Quality team pushes a profile of the new dataset typed .csv or .txt to specific bucket in S3, and then the second MLOps process is performed automatically from training job to hosting a new model replaced of an existing model without stopping a real-time predicted services in a canary way of the Amazon API Gateway.
