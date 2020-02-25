@@ -1,4 +1,4 @@
-# Amazon Sagemaker MLops via [AWS CodePipeline](https://aws.amazon.com/codepipeline/)
+# Amazon Sagemaker MLOps via AWS CodePipeline
 
 <div align="left">
   <img src="./docs/images/sagemaker.png">
@@ -18,7 +18,7 @@ SageMaker solves this challenge by providing all of the components used for mach
 
 MLOps (a compound of “machine learning” and “operations”) is a practice for collaboration and communication between data scientists and operations professionals to help manage production ML (or deep learning) lifecycle.
 
-## Proposed Work process
+### Proposed MLOps process
 
 <div align="center">
   <img src="./docs/images/proposedworkprocess.png">
@@ -26,14 +26,15 @@ MLOps (a compound of “machine learning” and “operations”) is a practice 
 The Machine Learning development is included a complex, expensive, and iterative process. Recently, many of customers are considering how to take ML out of R&D and into production at scale, using the same Devops best practices that have proven valuable in traditional software development. 
 In this demo, I focus on automated ways replaced of repetitive processes at the inference process after creating models by data scientists. Experienced, manual works are required like artists during training processes because data scientists have amounts of trial and errors to create models during training process.  The data scientists' competency and experiences has a effect on The model performance. After that, the Inference process is an iterative process. Therefore, the more manual intervened works do, the higher errors may be.
  
- ## Environments
-  ### dataset : [DAGM 2007 Dataset](https://hci.iwr.uni-heidelberg.de/node/3616)
+ ### Environments
+  #### dataset : [DAGM 2007 Dataset](https://hci.iwr.uni-heidelberg.de/node/3616)
   <div align="center">
   <img src="./docs/images/dataset.png">
   </div>
-  ### Deep learning framework : Pytorch
-  ### Main language : python 3.6
-  ### AWS Services
+  
+  #### Deep learning framework : Pytorch
+  #### Main language : python 3.6
+  #### AWS Services
 ```
     You should have some basic experience with:
     - [Amazon SageMaker](https://aws.amazon.com/sagemaker/)
