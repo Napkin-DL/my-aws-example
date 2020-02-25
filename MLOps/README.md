@@ -35,23 +35,25 @@ In this demo, I focus on automated ways replaced of repetitive processes at the 
   #### Deep learning framework : Pytorch
   #### Main language : python 3.6
   #### AWS Services
-```
-    You should have some basic experience with:
-    - [Amazon SageMaker](https://aws.amazon.com/sagemaker/)
-      - Amazon SageMaker Experiments
-      - Amazon SageMaker Debugger
-    - [AWS Lambda](https://aws.amazon.com/lambda/)
-    - [AWS CodePipeline](https://aws.amazon.com/codepipeline/)
-    - [AWS CodeCommit](https://aws.amazon.com/codecommit/)
-    - [AWS CodeBuild](https://aws.amazon.com/codebuild/)
-    - [Amazon ECR](https://aws.amazon.com/ecr/)
-    - [AWS S3](https://aws.amazon.com/s3/)
-    - [Amazon Simple Notification Service](https://aws.amazon.com/sns/)
-    - [Amazon API Gateway](https://aws.amazon.com/api-gateway/)
-    - [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/)
-```
+
+      You should have some basic experience with:
+      - [Amazon SageMaker](https://aws.amazon.com/sagemaker/)
+        - Amazon SageMaker Experiments
+        - Amazon SageMaker Debugger
+      - [AWS Lambda](https://aws.amazon.com/lambda/)
+      - [AWS CodePipeline](https://aws.amazon.com/codepipeline/)
+      - [AWS CodeCommit](https://aws.amazon.com/codecommit/)
+      - [AWS CodeBuild](https://aws.amazon.com/codebuild/)
+      - [Amazon ECR](https://aws.amazon.com/ecr/)
+      - [AWS S3](https://aws.amazon.com/s3/)
+      - [Amazon Simple Notification Service](https://aws.amazon.com/sns/)
+      - [Amazon API Gateway](https://aws.amazon.com/api-gateway/)
+      - [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/)
+
 ## Scenario
+
 There are two phases in the demo. The MLOps process at the first phase is performed automatically after pushing source codes for models to the AWS CodeCommit (similar to the Github). The process includes from deploying to hosting a model from which users can receive a result of classification via REST API. The detailed process is as a below.
+
 <div align="center">
   <img src="./docs/images/phase1process.png">
 </div>
