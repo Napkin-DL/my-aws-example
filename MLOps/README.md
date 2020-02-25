@@ -70,11 +70,14 @@ When amounts of new labeled dataset are collected in S3, the Quality team pushes
   <img src="./docs/images/phase2process.png">
 </div>
 ## Architecture
- 1. Phase 1 
-<div align="left">
-  <img src="./docs/images/architecture1.png">
-</div>
- 2. Phase 2 
-<div align="left">
-  <img src="./docs/images/architecture2.png">
-</div>
+
+1. Phase 1
+
+   <div align="left">
+     <img src="./docs/images/architecture1.png">
+   </div>
+
+2. Phase 2
+   <div align="left">
+     <img src="./docs/images/architecture2.png">
+   </div>
