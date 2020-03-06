@@ -1,0 +1,2 @@
+Phrase	IPA	SoundsLike	DisplayAs
+엘레	e l l ɛ		엘레
