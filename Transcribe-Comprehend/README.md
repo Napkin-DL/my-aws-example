@@ -41,7 +41,7 @@ Deploy to AWS Oregon
 <p>생성한 region 내 SageMaker로 가면 이미 생성한 Notebook Instance를 확인할 수 있으며, Notebook Instance를 들어가서 Amazon Transcribe와 Comprehend를 수행하시면 됩니다.</p>
 
 <h2>Custom Vocabulary 생성 시 주의 사항</h2>
-<p>Custom Vocabulary는 <code>1-Transcribe.ipynb</code> 내 마지막 부분의 cell 에서 words 리스트 형태로 정의하는 방법을 가이드하고 있습니다. 더 높은 정확도를 위해서는 table 형태로 정의도 가능합니다. 하지만 작성 시 아래 사항을 유의하시기 바랍니다.</p>
+<p>Custom Vocabulary는 <a href="./1-Transcribe.ipynb">1-Transcribe.ipynb</a> 내 마지막 부분의 cell 에서 words 리스트 형태로 정의하는 방법을 가이드하고 있습니다. 더 높은 정확도를 위해서는 table 형태로 정의도 가능합니다. 하지만 작성 시 아래 사항을 유의하시기 바랍니다.</p>
 <img src="./images/table_type.png" width="500" height="70">
 
 - IPA 와 SoundLike는 둘 중 하나만 선언이 가능
