@@ -2,7 +2,7 @@
 <p>Amazon Transcribe와 Comprehend를 테스트하기 위해 AWS Services 중 다음 Resources를 사용합니다.</p>
 
 - **S3 (Simple Storage Serivce)** : Object Storage로서 분석할 음성 데이터 파일과 결과 등을 저장하는데 사용합니다.
-- **SageMaker Notebook** : Python 을 이용하여 Amazon Transcribe와 Comprehend 를 실행하기 위한 테스트 환경을 생성합니다.
+- **SageMaker Notebook** : Python으로 Amazon Transcribe와 Comprehend 를 실행하기 위한 테스트 환경을 생성합니다.
 - **IAM (Identity and Access Management)** : Amazon Transcribe와 Comprehend 를 실행하기 위한 접근 권한을 관리합니다.
 
 <p>먼저 아래 Region 중 하나를 선택하여 클릭합니다. 그러면, 자동으로 CloudFormation을 통해 위 Demo 환경이 만들어 집니다. 
@@ -42,15 +42,15 @@ Deploy to AWS Oregon
 
 <h2>Custom Vocabulary 생성 시 주의 사항</h2>
 <p>Custom Vocabulary는 <a href="./1-Transcribe.ipynb">1-Transcribe.ipynb</a> 내 마지막 부분의 cell 에서 words 리스트 형태로 정의하는 방법을 가이드하고 있습니다. 더 높은 정확도를 위해서는 table 형태로 정의도 가능합니다. 하지만 작성 시 아래 사항을 유의하시기 바랍니다.</p>
-<img src="./images/table_type.png" width="500" height="70">
+<img src="./images/table_type.png" width="800" height="150">
 
 - IPA 와 SoundLike는 둘 중 하나만 선언이 가능
 - 각 column 사이는 공백 (space) 없이 Tab 만 가능
 - 일반적인 개발 툴 및 Text Editor 의 경우 Tab 이 space 4번으로 설정되어 있으며, 이를 그대로 사용할 경우 Error 가 발생
 
   - VScode 의 경우, setting 에서 tab 사용 시 space 추가 설정을 해제
-    <p><img src="./images/custom-voca-1.png" width="500", height="70"></p>
+    <p><img src="./images/custom-voca-1.png" width="800", height="150"></p>
   - 아래 설정을 하면 tab과 space 구분이 가능
-    <p><img src="./images/custom-voca-2.png" width="170", height="300"></p>
+    <p><img src="./images/custom-voca-2.png" width="200", height="500"></p>
 
 <p>자세한 예시는 <code>custom-vocabulary-example</code> 폴더에서 확인이 가능합니다.</p>
