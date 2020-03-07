@@ -47,10 +47,9 @@ Deploy to AWS Oregon
 - IPA 와 SoundLike는 둘 중 하나만 선언이 가능
 - 각 column 사이는 공백 (space) 없이 Tab 만 가능
 - 일반적인 개발 툴 및 Text Editor 의 경우 Tab 이 space 4번으로 설정되어 있으며, 이를 그대로 사용할 경우 Error 가 발생
-
   - VScode 의 경우, setting 에서 tab 사용 시 space 추가 설정을 해제
-    <p><img src="./images/custom-voca-1.png" width="800", height="100"></p>
+    <p><img src="./images/custom-voca-1.png" width="700", height="100"></p>
   - 아래 설정을 하면 tab과 space 구분이 가능
-    <p><img src="./images/custom-voca-2.png" width="350", height="500"></p>
+    <p><img src="./images/custom-voca-2.png" width="250", height="400"></p>
 
 <p>자세한 예시는 <a href="./custom-vocabulary-example">custom-vocabulary-example</a> Folder에서 확인이 가능합니다.</p>
