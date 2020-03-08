@@ -18,7 +18,7 @@
 <tbody>
 <tr>
 <td align="center">Oregon (us-west-2)</td>
-<td align="left"><a  href="https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/create/review?stackName=transcribe-comprehend-demo&amp;https://napkin-share.s3.ap-northeast-2.amazonaws.com/cloudformation/transcribe-comprehend-demo.yml&amp;" target="_blank"  class="btn btn-default">
+<td align="left"><a  href="https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/create/review?stackName=transcribe-comprehend-demo&amp;templateURL=https://napkin-share.s3.ap-northeast-2.amazonaws.com/cloudformation/transcribe-comprehend-demo.yml&amp;" target="_blank"  class="btn btn-default">
   <i class="fas fa-play"></i>
 
 Deploy to AWS Oregon
