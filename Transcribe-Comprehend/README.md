@@ -17,13 +17,110 @@
 </thead>
 <tbody>
 <tr>
+<td align="center">N. Virginia (us-east-1)</td>
+<td align="left"><a  href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?stackName=transcribe-comprehend-demo&amp;templateURL=https://napkin-share.s3.ap-northeast-2.amazonaws.com/cloudformation/transcribe-comprehend-demo.yml&amp;" target="_blank"  class="btn btn-default">
+  <i class="fas fa-play"></i>
+Deploy to AWS N. Virginia
+</a>
+</td>
+</tr>
+
+<tr>
+<td align="center">Ohio (us-east-2)</td>
+<td align="left"><a  href="https://console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/create/review?stackName=transcribe-comprehend-demo&amp;templateURL=https://napkin-share.s3.ap-northeast-2.amazonaws.com/cloudformation/transcribe-comprehend-demo.yml&amp;" target="_blank"  class="btn btn-default">
+  <i class="fas fa-play"></i>
+Deploy to AWS Ohio
+</a>
+</td>
+</tr>
+
+<tr>
 <td align="center">Oregon (us-west-2)</td>
 <td align="left"><a  href="https://console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/create/review?stackName=transcribe-comprehend-demo&amp;templateURL=https://napkin-share.s3.ap-northeast-2.amazonaws.com/cloudformation/transcribe-comprehend-demo.yml&amp;" target="_blank"  class="btn btn-default">
   <i class="fas fa-play"></i>
-
 Deploy to AWS Oregon
 </a>
+</td>
+</tr>
 
+<tr>
+<td align="center">Mumbai (ap-south-1)</td>
+<td align="left"><a  href="https://console.aws.amazon.com/cloudformation/home?region=ap-south-1#/stacks/create/review?stackName=transcribe-comprehend-demo&amp;templateURL=https://napkin-share.s3.ap-northeast-2.amazonaws.com/cloudformation/transcribe-comprehend-demo.yml&amp;" target="_blank"  class="btn btn-default">
+  <i class="fas fa-play"></i>
+Deploy to AWS Mumbai
+</a>
+</td>
+</tr>
+
+<tr>
+<td align="center">Seoul (ap-northeast-2)</td>
+<td align="left"><a  href="https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/create/review?stackName=transcribe-comprehend-demo&amp;templateURL=https://napkin-share.s3.ap-northeast-2.amazonaws.com/cloudformation/transcribe-comprehend-demo.yml&amp;" target="_blank"  class="btn btn-default">
+  <i class="fas fa-play"></i>
+Deploy to AWS Seoul
+</a>
+</td>
+</tr>
+
+<tr>
+<td align="center">Singapore (ap-southeast-1)</td>
+<td align="left"><a  href="https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/create/review?stackName=transcribe-comprehend-demo&amp;templateURL=https://napkin-share.s3.ap-northeast-2.amazonaws.com/cloudformation/transcribe-comprehend-demo.yml&amp;" target="_blank"  class="btn btn-default">
+  <i class="fas fa-play"></i>
+Deploy to AWS Singapore
+</a>
+</td>
+</tr>
+
+<tr>
+<td align="center">Sydney (ap-southeast-2)</td>
+<td align="left"><a  href="https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-2#/stacks/create/review?stackName=transcribe-comprehend-demo&amp;templateURL=https://napkin-share.s3.ap-northeast-2.amazonaws.com/cloudformation/transcribe-comprehend-demo.yml&amp;" target="_blank"  class="btn btn-default">
+  <i class="fas fa-play"></i>
+Deploy to AWS Sydney
+</a>
+</td>
+</tr>
+
+<tr>
+<td align="center">Tokyo (ap-northeast-1)</td>
+<td align="left"><a  href="https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-1#/stacks/create/review?stackName=transcribe-comprehend-demo&amp;templateURL=https://napkin-share.s3.ap-northeast-2.amazonaws.com/cloudformation/transcribe-comprehend-demo.yml&amp;" target="_blank"  class="btn btn-default">
+  <i class="fas fa-play"></i>
+Deploy to AWS Tokyo
+</a>
+</td>
+</tr>
+
+<tr>
+<td align="center">Central (ca-central-1)</td>
+<td align="left"><a  href="https://console.aws.amazon.com/cloudformation/home?region=ca-central-1#/stacks/create/review?stackName=transcribe-comprehend-demo&amp;templateURL=https://napkin-share.s3.ap-northeast-2.amazonaws.com/cloudformation/transcribe-comprehend-demo.yml&amp;" target="_blank"  class="btn btn-default">
+  <i class="fas fa-play"></i>
+Deploy to AWS Central
+</a>
+</td>
+</tr>
+
+<tr>
+<td align="center">Frankfurt (eu-central-1)</td>
+<td align="left"><a  href="https://console.aws.amazon.com/cloudformation/home?region=eu-central-1#/stacks/create/review?stackName=transcribe-comprehend-demo&amp;templateURL=https://napkin-share.s3.ap-northeast-2.amazonaws.com/cloudformation/transcribe-comprehend-demo.yml&amp;" target="_blank"  class="btn btn-default">
+  <i class="fas fa-play"></i>
+Deploy to AWS Frankfurt
+</a>
+</td>
+</tr>
+
+<tr>
+<td align="center">Ireland (eu-west-1)</td>
+<td align="left"><a  href="https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/create/review?stackName=transcribe-comprehend-demo&amp;templateURL=https://napkin-share.s3.ap-northeast-2.amazonaws.com/cloudformation/transcribe-comprehend-demo.yml&amp;" target="_blank"  class="btn btn-default">
+  <i class="fas fa-play"></i>
+Deploy to AWS Ireland
+</a>
+</td>
+</tr>
+
+<tr>
+<td align="center">London (eu-west-2)</td>
+<td align="left"><a  href="https://console.aws.amazon.com/cloudformation/home?region=eu-west-2#/stacks/create/review?stackName=transcribe-comprehend-demo&amp;templateURL=https://napkin-share.s3.ap-northeast-2.amazonaws.com/cloudformation/transcribe-comprehend-demo.yml&amp;" target="_blank"  class="btn btn-default">
+  <i class="fas fa-play"></i>
+Deploy to AWS London
+</a>
 </td>
 </tr>
 
