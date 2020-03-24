@@ -8,4 +8,5 @@
 <p>사용에는 어떠한 제약은 없으나 수행하는데 비용이 발생할 수 있습니다.</p>
 <p>또한, Source Code 개발 시 보안 관점으로는 고려하지 않은 부분이 일부 존재할 수 있으니 실제 Production 에서 사용시에는 주의하시거나 직접 AWS에 문의하시기 바랍니다.</p>
 
-- [Transcribe-Comprehend](Transcribe-Comprehend/README.md)
+- [Amazon Transcribe-Comprehend](Transcribe-Comprehend/README.md)
+- [Amazon Forecast](Forecasting-workshop/README.md)
