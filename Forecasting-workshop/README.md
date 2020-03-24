@@ -14,10 +14,10 @@ The demo is presented as a series of Python notebooks designed to be run in Amaz
 <thead>
 
 <tr>
-<td align="center">Seoul (ap-northeast-2)</td>
-<td align="left"><a  href="https://console.aws.amazon.com/cloudformation/home?region=ap-northeast-2#/stacks/create/review?stackName=ForecastDemoLab&amp;templateURL=https://napkin-share.s3.ap-northeast-2.amazonaws.com/cloudformation/amazon-forecast.yml&amp;" target="_blank"  class="btn btn-default">
+<td align="center">Singapore (ap-southeast-1)</td>
+<td align="left"><a  href="https://console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks/create/review?stackName=ForecastDemoLab&amp;templateURL=https://napkin-share.s3.ap-northeast-2.amazonaws.com/cloudformation/amazon-forecast.yml&amp;" target="_blank"  class="btn btn-default">
   <i class="fas fa-play"></i>
-Deploy to AWS Seoul
+Deploy to AWS Singapore
 </a>
 </td>
 </tr>
