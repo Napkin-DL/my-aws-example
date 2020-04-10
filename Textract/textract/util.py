@@ -31,8 +31,8 @@ def get_sync_detect_document_text(bucket, document, response):
     ori_image, image, stream = s3_to_image(bucket, document)
     # Detect text in the document
     # process using image bytes
-    #image_binary = stream.getvalue()
-    #response = textract.detect_document_text(Document={'Bytes': image_binary})
+    # image_binary = stream.getvalue()
+    # response = textract.detect_document_text(Document={'Bytes': image_binary})
 
     # Get the text blocks
     blocks = response['Blocks']
@@ -81,9 +81,9 @@ def get_sync_detect_document_text(bucket, document, response):
 
             # Uncomment to draw bounding box
             # box=block['Geometry']['BoundingBox']
-            #left = width * box['Left']
-            #top = height * box['Top']
-            #draw.rectangle([left,top, left + (width * box['Width']), top +(height * box['Height'])],outline='black')
+            # left = width * box['Left']
+            # top = height * box['Top']
+            # draw.rectangle([left,top, left + (width * box['Width']), top +(height * box['Height'])],outline='black')
     return ori_image, image, blocks
 
 # Displays information about a block returned by text detection and text analysis
@@ -118,20 +118,29 @@ def DisplayBlockInformation(block):
     print()
 
 
-def ShowBoundingBox(draw, box, width, height, boxColor):
+def drawrect(drawcontext, xy, outline=None, width=1):
+    (x1, y1), (x2, y2) = xy
+    offset = 1
+    for i in range(0, width):
+        drawcontext.rectangle(((x1, y1), (x2, y2)), outline=outline)
+        x1 = x1 - offset
+        y1 = y1 + offset
+        x2 = x2 + offset
+        y2 = y2 - offset
 
+
+def ShowBoundingBox(draw, box, width, height, boxColor):
     left = width * box['Left']
     top = height * box['Top']
-    draw.rectangle([left, top, left + (width * box['Width']),
-                    top + (height * box['Height'])], outline=boxColor)
+    drawrect(draw, [(left, top), (left + (width * box['Width']),
+                                  top + (height * box['Height']))], outline=boxColor, width=3)
 
 
 def ShowSelectedElement(draw, box, width, height, boxColor):
-
     left = width * box['Left']
     top = height * box['Top']
-    draw.rectangle([left, top, left + (width * box['Width']),
-                    top + (height * box['Height'])], fill=boxColor)
+    drawrect(draw, [(left, top), (left + (width * box['Width']),
+                                  top + (height * box['Height']))], outline=boxColor, width=3)
 
 # Displays information about a block returned by text detection and text analysis
 
@@ -190,9 +199,9 @@ def get_pdf_detect_document_text(document, blocks):
 
             # Uncomment to draw bounding box
             # box=block['Geometry']['BoundingBox']
-            #left = width * box['Left']
-            #top = height * box['Top']
-            #draw.rectangle([left,top, left + (width * box['Width']), top +(height * box['Height'])],outline='black')
+            # left = width * box['Left']
+            # top = height * box['Top']
+            # draw.rectangle([left,top, left + (width * box['Width']), top +(height * box['Height'])],outline='black')
     return ori_image, image, blocks
 
 
@@ -234,7 +243,7 @@ def get_sync_analyze_document(image, response):
             # points=[]
             # for polygon in block['Geometry']['Polygon']:
             #    points.append((width * polygon['X'], height * polygon['Y']))
-            #draw.polygon((points), outline='blue')
+            # draw.polygon((points), outline='blue')
     return image, blocks
 
 
@@ -568,7 +577,7 @@ def get_pdf_analyze_document(document, blocks):
             # points=[]
             # for polygon in block['Geometry']['Polygon']:
             #    points.append((width * polygon['X'], height * polygon['Y']))
-            #draw.polygon((points), outline='blue')
+            # draw.polygon((points), outline='blue')
     return ori_image, image, blocks
 
 
@@ -619,7 +628,7 @@ def get_multipages_block_result(jobId):
     doc_block = {}
     init_val = False
     while finished == False:
-#         print("paginationToken : {}".format(paginationToken))
+        #         print("paginationToken : {}".format(paginationToken))
         response = None
         if paginationToken == None:
             response = textract.get_document_analysis(JobId=jobId,
@@ -685,5 +694,5 @@ def get_multipages_analyze_document(image, blocks):
             # points=[]
             # for polygon in block['Geometry']['Polygon']:
             #    points.append((width * polygon['X'], height * polygon['Y']))
-            #draw.polygon((points), outline='blue')
+            # draw.polygon((points), outline='blue')
     return image, blocks
