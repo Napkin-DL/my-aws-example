@@ -97,7 +97,7 @@ Deploy to AWS London
 - **NotebookName** : SageMaker Notebook 이름 (default : Amazon-Textract-DemoLab)
 - **VolumeSize** : SageMaker Notebook에서 사용하는 EBS 용량 조정 (default : 5 GB)
 
-<img src="./readme_images/cloudformation_result.png" width="900" height="500">
+<img src="./readme_images/cloudformation_result.png" width="900" height="400">
 
 <p>CloudFormation에서 생성이 완료된 후 위 그림과 같이 Output 탭에서 결과를 볼 수 있으며 해당 결과를 이후 작업에서 이용하게 됩니다. CloudFormation의 Output 탭에는 생성된 S3 Bucket과 SageMaker notebook 이름, SNSTopicPublishRoleArn 정보를 확인할 수 있습니다. <code>SNSTopicPublishRoleArn</code>는 PDF 파일을 분석하는 Asynchronous 방식의 2번째 SageMaker Notebook 에서 활용하므로 메모장 등에 복사해서 바로 사용할 수 있도록 합니다.</p>
 <p>먼저 S3 서비스로 이동하여 생성된 S3 Bucket에서 문서 이미지 파일을 upload 합니다. (S3 Bucket 이름은 Output 탭에서 확인이 가능합니다.)</p>
@@ -122,4 +122,4 @@ SageMaker Notebook을 전체 실행하는 방법은 기존 Jupyter Notebook과 �
 <img src='./readme_images/3_nb_revised.png' width='900' height='250'>
 <p><code>2_Practice_Async.ipynb</code>에서 분석한 문서가 복수 개일 경우에는 각 문서의 번호를 변경하면서 분석 결과를 확인할 수 있습니다. 1개일 경우에는 1로 하면 됩니다.</p>
 <p>또한, 문서 내 복수 개의 페이지일 경우에는 아래 그림처럼 page_num를 변경합니다. 현재는 페이지별로 1장 씩 결과를 확인할 수 있도록 구성하였습니다. 페이지를 변경한 후 <code>3_Practice_Async_Result.ipynb</code>을 전체 수행하거나 수정된 위치 다음부터 변경을 하면서 결과를 확인할 수 있습니다.</p>
-<img src='./readme_images/3_1_nb_revised.png' width='900' height='150'>
+<img src='./readme_images/3_1_nb_revised.png' width='900' height='100'>
