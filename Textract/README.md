@@ -90,7 +90,7 @@ Deploy to AWS London
 
 </tbody>
 </table>
-<img src="./readme_images/cloudformation_create.png" width="900" height="450">
+<img src="./readme_images/cloudformation_create.png" width="900" height="500">
 <p>AWS Console에 로그인을 한 후 CloudFormation에서 요구하는 Parameters 정보를 추가합니다. XXX를 다른 문자로 추가합니다. </p>
 
 - **S3 Bucket Name** : amazon-textract-demo-XXX (Globally unique 해야 한다는 점으로 고려하여 어떤 이름으로도 수정이 가능함)
