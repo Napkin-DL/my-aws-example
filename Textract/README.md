@@ -90,13 +90,15 @@ Deploy to AWS London
 
 </tbody>
 </table>
-
+<img src="./readme_images/cloudformation_create.png" width="900" height="350">
 <p>AWS Console에 로그인을 한 후 CloudFormation에서 요구하는 Parameters 정보를 추가합니다. XXX를 다른 문자로 추가합니다. </p>
 
 - **S3 Bucket Name** : amazon-textract-demo-XXX (Globally unique 해야 한다는 점으로 고려하여 어떤 이름으로도 수정이 가능함)
 - **NotebookName** : SageMaker Notebook 이름 (default : Amazon-Textract-DemoLab)
 - **VolumeSize** : SageMaker Notebook에서 사용하는 EBS 용량 조정 (default : 5 GB)
 
+<p>각 Parameters 값을 수정한 다음 하단 체크박스를 체크한 후 <strong>Create Stack</strong> 버튼을 클릭합니다.</p>
+<p>이 단계에서 보통 발생하는 에러는 S3 Bucket의 이름이 중복이 되는 경우, CloudFormation의 Stack Name이 이미 존재하는 경우입니다. 해당 경우에는 이름을 변경하여 다시 Create 를 하시면 정상적으로 테스트 환경이 생성됩니다.</p>
 <img src="./readme_images/cloudformation_result.png" width="900" height="350">
 
 <p>CloudFormation에서 생성이 완료된 후 위 그림과 같이 Output 탭에서 결과를 볼 수 있으며 해당 결과를 이후 작업에서 이용하게 됩니다. CloudFormation의 Output 탭에는 생성된 S3 Bucket과 SageMaker notebook 이름, SNSTopicPublishRoleArn 정보를 확인할 수 있습니다. <code>SNSTopicPublishRoleArn</code>는 PDF 파일을 분석하는 Asynchronous 방식의 2번째 SageMaker Notebook 에서 활용하므로 메모장 등에 복사해서 바로 사용할 수 있도록 합니다.</p>
