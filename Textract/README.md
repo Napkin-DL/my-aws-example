@@ -1,4 +1,4 @@
-<h1 id="deploy-base-environment">수행 방법</h1>
+<h1 id="head1">수행 방법</h1>
 <p>Amazon Textract를 테스트하기 위해 AWS Services 중 다음 Resources를 사용합니다.</p>
 
 - **S3 (Simple Storage Serivce)** : Object Storage로서 분석할 문서 이미지 데이터 파일 (PNG, JPEG, PDF) 을 저장하는데 사용합니다.
@@ -125,3 +125,15 @@ SageMaker Notebook을 전체 실행하는 방법은 기존 Jupyter Notebook과 �
 <p><code>2_Practice_Async.ipynb</code>에서 분석한 문서가 복수 개일 경우에는 각 문서의 번호를 변경하면서 분석 결과를 확인할 수 있습니다. 1개일 경우에는 1로 하면 됩니다.</p>
 <p>또한, 문서 내 복수 개의 페이지일 경우에는 아래 그림처럼 page_num를 변경합니다. 현재는 페이지별로 1장 씩 결과를 확인할 수 있도록 구성하였습니다. 페이지를 변경한 후 <code>3_Practice_Async_Result.ipynb</code>을 전체 수행하거나 수정된 위치 다음부터 변경을 하면서 결과를 확인할 수 있습니다.</p>
 <img src='./readme_images/3_1_nb_revised.png' width='900' height='80'>
+
+<h1 id="head1">Limits</h1>
+<p>- 최대 문서 이미지 (JPEG / PNG) 크기는 10MB입니다.</p>
+<p>- 최대 PDF 파일 크기는 500MB입니다.</p>
+<p>- PDF 파일의 최대 페이지 수는 3000입니다.</p>
+<p>- PDF의 미디어 크기의 최대 높이/너비는 40 인치 또는 2880 포인트입니다.</p>
+<p>- 텍스트의 최소 높이는 15 픽셀이며, 150 DPI에서는 이 값은 8 pt 글꼴과 같습니다.</p>
+<p>- 세로 축에서 최대 +/- 10 % 회전된 문서는 가능하며, 텍스트는 문서 내에서 가로로 정렬된 텍스트가 가능합니다.</p>
+<p>- Amazon Textract는 영어 텍스트 감지 만 지원합니다.</p>
+<p>- Amazon Textract는 필기 감지를 지원하지 않습니다.</p>
+<p>- Amazon Textract 동기 작업 (DetectDocumentText 및 AnalyzeDocument)은 PNG 및 JPEG 이미지 형식을 지원합니다.</p>
+<p>- 비동기 작업 (StartDocumentTextDetection, StartDocumentAnalysis)도 PDF 파일 형식을 지원합니다.</p>
