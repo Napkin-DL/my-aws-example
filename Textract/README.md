@@ -106,6 +106,13 @@ Deploy to AWS London
 <img src="./readme_images/bucket_image.png" width="900" height="400">
 
 <p>생성한 region 내 SageMaker로 가면 이미 생성한 Notebook Instance를 확인할 수 있으며, Notebook Instance를 들어가서 Textract 폴더로 이동하여 각 SageMaker Notebook 파일을 수행하시면 됩니다.</p>
+<img src='./readme_images/sagemaker_intro.png' width='900' height='200'>
+<p>상단 탭에 Services를 클릭한 다음 검색창에 SageMaker를 입력한 다음 Amazon SageMaker를 클릭합니다.</p>
+<img src='./readme_images/sm_start.png' width='900' height='200'>
+<p>왼쪽 메뉴바에서 Notebook Instance를 클릭한 다음 CloudFormation으로 생성한 Notebook과 동일한 이름을 instance의 오른쪽 Actions에서 Open Jupyter를 클릭합니다.</p>
+
+<img src='./readme_images/sm_folder.png' width='900' height='200'>
+<p>Notebook에는 github에 저장되어 있던 Textract 폴더를 확인할 수 있으며, 폴더를 클릭하여 들어가면 테스트를 위해 실행할 수 있는 3개의 노트북 파일을 확인할 수 있습니다.</p>
 
 <img src='./readme_images/1_nb_revised.png' width='900' height='400'>
 <p>1번 SageMaker Notebook의 경우 <strong>PNG, JPG/JPEG</strong>에 대해 synchronous하게 결과를 바로 받아볼 수 있습니다. 노트북 파일에서 파란색 박스의 값만 S3 bucket의 이름과 upload한 이미지 이름으로 추가한 후 실행을 하면 결과를 확인할 수 있습니다.</p>
