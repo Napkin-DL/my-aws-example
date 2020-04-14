@@ -10,3 +10,4 @@
 
 - [Amazon Transcribe-Comprehend](Transcribe-Comprehend/README.md)
 - [Amazon Forecast](Forecasting-workshop/README.md)
+- [Amazon Textract](Textract/README.md)
