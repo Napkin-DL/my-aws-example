@@ -90,7 +90,7 @@ Deploy to AWS London
 
 </tbody>
 </table>
-<img src="./readme_images/cloudformation_create.png" width="900" height="350">
+<img src="./readme_images/cloudformation_create.png" width="900" height="450">
 <p>AWS Console에 로그인을 한 후 CloudFormation에서 요구하는 Parameters 정보를 추가합니다. XXX를 다른 문자로 추가합니다. </p>
 
 - **S3 Bucket Name** : amazon-textract-demo-XXX (Globally unique 해야 한다는 점으로 고려하여 어떤 이름으로도 수정이 가능함)
@@ -103,15 +103,15 @@ Deploy to AWS London
 
 <p>CloudFormation에서 생성이 완료된 후 위 그림과 같이 Output 탭에서 결과를 볼 수 있으며 해당 결과를 이후 작업에서 이용하게 됩니다. CloudFormation의 Output 탭에는 생성된 S3 Bucket과 SageMaker notebook 이름, SNSTopicPublishRoleArn 정보를 확인할 수 있습니다. <code>SNSTopicPublishRoleArn</code>는 PDF 파일을 분석하는 Asynchronous 방식의 2번째 SageMaker Notebook 에서 활용하므로 메모장 등에 복사해서 바로 사용할 수 있도록 합니다.</p>
 <p>먼저 S3 서비스로 이동하여 생성된 S3 Bucket에서 문서 이미지 파일을 upload 합니다. (S3 Bucket 이름은 Output 탭에서 확인이 가능합니다.)</p>
-<img src="./readme_images/bucket_image.png" width="900" height="400">
+<img src="./readme_images/bucket_image.png" width="900" height="380">
 
 <p>생성한 region 내 SageMaker로 가면 이미 생성한 Notebook Instance를 확인할 수 있으며, Notebook Instance를 들어가서 Textract 폴더로 이동하여 각 SageMaker Notebook 파일을 수행하시면 됩니다.</p>
-<img src='./readme_images/sagemaker_intro.png' width='900' height='200'>
+<img src='./readme_images/sagemaker_intro.png' width='900' height='180'>
 <p>상단 탭에 Services를 클릭한 다음 검색창에 SageMaker를 입력한 다음 Amazon SageMaker를 클릭합니다.</p>
-<img src='./readme_images/sm_start.png' width='900' height='200'>
+<img src='./readme_images/sm_start.png' width='900' height='220'>
 <p>왼쪽 메뉴바에서 Notebook Instance를 클릭한 다음 CloudFormation으로 생성한 Notebook과 동일한 이름을 instance의 오른쪽 Actions에서 Open Jupyter를 클릭합니다.</p>
 
-<img src='./readme_images/sm_folder.png' width='900' height='200'>
+<img src='./readme_images/sm_folder.png' width='900' height='180'>
 <p>Notebook에는 github에 저장되어 있던 Textract 폴더를 확인할 수 있으며, 폴더를 클릭하여 들어가면 테스트를 위해 실행할 수 있는 3개의 노트북 파일을 확인할 수 있습니다.</p>
 
 <img src='./readme_images/1_nb_revised.png' width='900' height='400'>
