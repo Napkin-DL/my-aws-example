@@ -466,7 +466,7 @@ def GetResults(jobId, types):
 
         response = None
 
-        if types == ProcessType.ANALYSIS:
+        if types == 2:
             if paginationToken == None:
                 response = textract.get_document_analysis(JobId=jobId,
                                                           MaxResults=maxResults)
@@ -475,7 +475,7 @@ def GetResults(jobId, types):
                                                           MaxResults=maxResults,
                                                           NextToken=paginationToken)
 
-        if types == ProcessType.DETECTION:
+        if types == 1:
             if paginationToken == None:
                 response = textract.get_document_text_detection(JobId=jobId,
                                                                 MaxResults=maxResults)
