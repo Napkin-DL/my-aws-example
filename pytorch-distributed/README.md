@@ -6,6 +6,16 @@ Generative Tensorial Reinforcement Learning (GENTRL) model ([GENTRL](https://git
 
 코드의 개발환경과 데이터셋은 기존 github 자료를 이용하시기 바랍니다. (https://github.com/insilicomedicine/GENTRL)
 
+### Running Tests
+
+To run the tests, use the following command:
+
+```bash
+python run_tests.py
+```
+
+This will discover and run all tests in the `tests` directory.
+
 ### Reference
 
 - [(ADVANCED) PYTORCH 1.0 DISTRIBUTED TRAINER WITH AMAZON AWS](https://pytorch.org/tutorials/beginner/aws_distributed_training_tutorial.html)
