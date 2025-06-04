@@ -14,4 +14,5 @@ setup(
         'molsets==0.1.3'
     ],
     description='Generative Tensorial Reinforcement Learning (GENTRL)',
+    test_suite='tests',
 )
